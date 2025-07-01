@@ -1,263 +1,373 @@
-# Awesome Webpack4+ 优秀学习资源
+# Awesome Webpack 5+ Learning Resources
 
-> 搜罗 Webpack 4 or 5 好文章，投稿请到此[issue](https://github.com/Tecvan-fe/awesome-webpack-zh_cn/issues/1)里提交文章，或者直接发pull request。
-> 也欢迎关注公众号【Tecvan】了解更多 Webpack 好文。
+> A curated list of awesome Webpack 4+ and 5+ learning resources, tutorials, tools, and articles. Contributions are welcome via [pull requests](https://github.com/Tecvan-fe/awesome-webpack-zh_cn/pulls) or [issues](https://github.com/Tecvan-fe/awesome-webpack-zh_cn/issues).
 
-## :mortar_board: 基础入门
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-### :closed_book: 使用 Webpack 开发 Web 应用
+## Table of Contents
 
-- [介绍 | Webpack 中文指南](https://zhaoda.net/webpack-handbook/index.html)
-- [2020年了,再不会webpack敲得代码就不香了(近万字实战)](https://juejin.cn/post/6844904031240863758#heading-0)
-- [webpack4 的30个步骤打造优化到极致的 react 开发环境，如约而至](https://juejin.cn/post/6844903862898262024#heading-0)
+- [Getting Started](#getting-started)
+- [Advanced Topics](#advanced-topics)
+- [Performance Optimization](#performance-optimization)
+- [Micro-frontends & Module Federation](#micro-frontends--module-federation)
+- [Development Tools & Debugging](#development-tools--debugging)
+- [Real-world Projects](#real-world-projects)
+- [Video Tutorials](#video-tutorials)
+- [Tools & Plugins](#tools--plugins)
+- [Community Resources](#community-resources)
+- [Books & Courses](#books--courses)
+
+## Getting Started
+
+### Basic Tutorials
+
+- [Webpack Official Getting Started Guide](https://webpack.js.org/guides/getting-started/)
+- [Webpack Concepts](https://webpack.js.org/concepts/)
+- [A Complete Guide to Webpack 5](https://www.valentinog.com/blog/webpack/)
+- [Webpack Tutorial for Beginners](https://www.freecodecamp.org/news/a-complete-webpack-tutorial-for-beginners/)
 - [How to use Webpack with React: an in-depth tutorial](https://www.freecodecamp.org/news/learn-webpack-for-react-a36d4cac5060/)
-- [webpack-contrib/awesome-webpack](https://github.com/webpack-contrib/awesome-webpack)
-- [petehunt/webpack-howto](https://github.com/petehunt/webpack-howto/blob/master/README-zh.md)
-- [Webpack 初学者教学课程 Part 1 - Webpack 简介](https://github.com/AriaFallah/WebpackTutorial/tree/master/zh-cn/part1)
-- [A mostly complete guide to webpack 5 \(2020\)](https://www.valentinog.com/blog/webpack/)
 - [Webpack Examples](https://github.com/webpack/webpack/tree/master/examples)
 - [ruanyf/webpack-demos](https://github.com/ruanyf/webpack-demos)
-- [Webpack 入门指迷](https://segmentfault.com/a/1190000002551952)
+- [Learn Webpack Course](https://github.com/AriaFallah/WebpackTutorial)
+- [Webpack Handbook](https://survivejs.com/webpack/)
 
-### :closed_book: Webpack 5 新特性
+### Webpack 5 New Features
 
-- [Webpack 5 正式发布，那些你需要关注的新特性](https://juejin.cn/post/6882663278712815629)
-- [webpack 5 升级指南](https://webpack.docschina.org/migrate/5/)
-- [Webpack 5 新特性介绍](https://github.com/webpack/changelog-v5)
-- [Webpack 5 知识体系](https://gitmind.cn/app/doc/fac1c196e29b8f9052239f16cff7d4c7)
-- [【前端工程化】webpack5从零搭建完整的react18+ts开发和打包环境](https://github.com/guojiongwei/webpack5-react-ts)
-- [Webpack5 学习指南](https://github.com/leopord-lau/webpack5-book)
+- [Webpack 5 Release Notes](https://webpack.js.org/blog/2020-10-10-webpack-5-release/)
+- [Migration Guide to Webpack 5](https://webpack.js.org/migrate/5/)
+- [Webpack 5 New Features and Changes](https://auth0.com/blog/webpack-5-changes-and-features/)
+- [What's New in Webpack 5](https://blog.logrocket.com/webpack-5-adoption-guide-overview-new-features/)
+- [Webpack 5 Complete Tutorial](https://github.com/leopord-lau/webpack5-book)
+- [Webpack 5 with React and TypeScript](https://github.com/guojiongwei/webpack5-react-ts)
+- [Understanding Webpack 5 Module Federation](https://module-federation.github.io/)
 
-### :closed_book: 使用 Webpack 编写 npm 包
+### Building Libraries & NPM Packages
 
+- [Creating a Library with Webpack](https://webpack.js.org/guides/author-libraries/)
 - [Let's Write a JavaScript Library in ES6 using Webpack and Babel](https://www.loginradius.com/blog/async/write-a-javascript-library-using-webpack-and-babel/)
-- [现代前端库开发指南系列\(二\):使用 webpack 构建一个库](https://juejin.cn/post/6844904021291958286)
-- [[译] 基于 Webpack 和 ES6 打造 JavaScript 类库](https://github.com/cssmagic/blog/issues/56)
+- [Building and Publishing a Module with Webpack](https://www.robinwieruch.de/webpack-javascript-library/)
+- [Modern JavaScript Library Development with Webpack](https://blog.bitsrc.io/building-a-modern-javascript-library-d0ae9b4b9e8d)
 
-### :closed_book: 使用脚手架
+### Scaffolding Tools
 
-- [facebook/create-react-app](https://github.com/facebook/create-react-app)
-- [vuejs/vue-cli](https://github.com/vuejs/vue-cli)
-- [tjx666/awesome-chrome-extension-boilerplate](https://github.com/tjx666/awesome-chrome-extension-boilerplate)
-
-<hr />
-
-## :mortar_board: 进阶
-
-### :closed_book: 高级特性
-
-- Tree Shaking
-  - [Webpack 4 Tree Shaking 终极优化指南](https://juejin.cn/post/6844903998634328072)
-  - [Tree-Shaking性能优化实践 - 原理篇](https://juejin.cn/post/6844903544756109319)
-  - [Tree-Shaking性能优化实践 - 实践篇](https://juejin.cn/post/6844903544760336398)
-- 缓存
-  - [Webpack5 内置缓存方案探索](https://juejin.cn/post/6847902218570432520)
-- Module Federation
-  - [webpack 5 ModuleFederationPlugin vue 项目初体验](https://juejin.cn/post/6883408771322740743)
-  - [使用 webpack5 模块联邦搭建微前端](https://github.com/jackchoumine/micro-front-end-mfd)
-  - [模块联邦( Module Federation ) 微前端实现](https://github.com/kavience/module-federation-demo)
-  - [Webpack 5 模块联邦 + Node.js+ Nacos 微前端实践](https://github.com/Jason-chen-coder/Webpack5Mfp-Node-Nacos)
-
-### :closed_book: 如何编写 Loader
-
-- [✏️ loader知识分享](https://juejin.cn/post/6950092728919130126)
-- [【Webpack进阶】Loader深入解析](https://zhuanlan.zhihu.com/p/360421184)
-- [手把手教你撸一个 Webpack Loader](https://juejin.cn/post/6844903555673882632)
-- [如何开发一个 Webpack Loader \( 一 \)](https://github.com/joeyguo/blog/issues/4)
-
-### :closed_book: 如何编写 Plugin
-
-- [Webpack 案例 -- vue-loader 原理分析](https://juejin.cn/post/6937125495439900685)
-- [如何写一个webpack插件（一）](https://github.com/lcxfs1991/blog/issues/1)
-
-### :closed_book: 实现原理
-
-- [[万字总结] 一文吃透 Webpack 核心原理](https://mp.weixin.qq.com/s/SbJNbSVzSPSKBe2YStn2Zw)
-- [理解webpack原理，手写一个100行的webpack](https://zhuanlan.zhihu.com/p/58151131)
-- [Webpack HMR 原理解析](https://zhuanlan.zhihu.com/p/30669007)
-- [彻底搞懂并实现webpack热更新原理](https://segmentfault.com/a/1190000020310371)
-- [AST 与前端工程化实战](https://mp.weixin.qq.com/s/2ACQ0KwdB0ph3sqj2iK-uA)
-
-### :closed_book: 面试
-
-- [「吐血整理」再来一打Webpack面试题](https://juejin.cn/post/6844904094281236487#heading-0)
-- [Webpack interview questions](https://github.com/styopdev/webpack-interview-questions)
-- [webpack 中那些最易混淆的 5 个知识点](https://juejin.cn/post/6844904007362674701)
-
-### :closed_book: 系列连载
-
-- [深入浅出 Webpack](https://webpack.wuhaolin.cn/)
-- [Webpack 5 知识体系](https://gitmind.cn/app/doc/fac1c196e29b8f9052239f16cff7d4c7)
-- [随笔列表第6页 - 书生小龙 - 博客园](https://www.cnblogs.com/QH-Jimmy/default.html?page=6)
-- [Webpack Book from SurviveJS](https://survivejs.com/webpack/foreword/) 
-- [史上最走心webpack4.0中级教程--配置之外你应该知道的事](https://www.cnblogs.com/dashnowords/p/9572755.html)
-- [Webpack5 核心原理与应用实践demo](https://github.com/haihaina/webpack-practice)
-- [范文杰](https://www.zhihu.com/people/tec-van/posts) - 源码解析系列
-  - [[万字总结] 一文吃透 Webpack 核心原理](https://mp.weixin.qq.com/s/SbJNbSVzSPSKBe2YStn2Zw)
-  - [[源码解读] Webpack 插件架构深度讲解](https://mp.weixin.qq.com/s/tXkGx6Ckt9ucT2o8tNM-8w)
-  - [十分钟精进 Webpack：module.issuer 属性详解](https://mp.weixin.qq.com/s/QkXFOHNpL0PRQtCcWIaX-g)
-  - [有点难的 webpack 知识点：Dependency Graph 深度解析](https://mp.weixin.qq.com/s/kr73Epnn6wAx9DH7KRVUaA)
-  - [有点难的知识点： Webpack Chunk 分包规则详解](https://mp.weixin.qq.com/s/dFrRY_ntUwmIOXzs8TYcFQ)
-  - [分享几个 Webpack 实用分析工具](https://mp.weixin.qq.com/s/A0udBhvNoA0o-kX1B0rt9A)
-  - [Webpack 原理系列六： 彻底理解 Webpack 运行时](https://mp.weixin.qq.com/s/nkBvbwpzeb0fzG02HXta8A)
-- [刘小夕](https://juejin.cn/user/3368559358523944) - 带你深度解锁 Webpack 系列
-  - [带你深度解锁Webpack系列\(基础篇\)](https://juejin.cn/post/6844904079219490830)
-  - [带你深度解锁Webpack系列\(进阶篇\)](https://juejin.cn/post/6844904084927938567)
-  - [带你深度解锁Webpack系列\(优化篇\)](https://juejin.cn/post/6844904093463347208)
-- [滴滴前端技术团队](https://juejin.cn/team/6943816493473726472/posts) - Webpack 原理分析系列文章
-  - [你不知道的webpack静态文件生成过程](https://juejin.cn/post/6959449526197288996)
-  - [webpack系列之七-文件生成](https://juejin.cn/post/6844903925179482119)
-  - [webpack系列之七-附dependencyTemplates依赖模板](https://juejin.cn/post/6844903925171093518)
-  - [webpack系列之六chunk图生成](https://juejin.cn/post/6844903864592777229)
-  - [webpack系列之五module生成1](https://juejin.cn/post/6844903830266576909)
-  - [webpack系列之四loader详解1](https://juejin.cn/post/6844903780769595405)
-  - [webpack系列之三resolve](https://juejin.cn/post/6844903779712630797)
-  - [webpack系列之二Tapable](https://juejin.cn/post/6844903750729990152)
-  - [webpack系列之一总览](https://juejin.cn/post/6844903726981840904)
-
-<hr />
-
-## :mortar_board: 微前端与模块联邦
-
-### :closed_book: Module Federation 实践
-
-- [微前端和模块联邦结合示例](https://github.com/jackzhujie/mofd)
-- [基于模块联邦的微前端学习demo](https://github.com/zhang-glitch/module-federated-microapplication)
-- [Micro front-end and module federation](https://github.com/jackzhujie/mofd)
-- [Webpack 模块联邦实现微前端](https://github.com/zongyunfeng/react-mf-with-webpack)
-
-### :closed_book: 微前端架构
-
-- [single-spa](https://single-spa.js.org/docs/getting-started-overview) - 微前端框架
-- [qiankun](https://qiankun.umijs.org/zh) - 蚂蚁金服微前端解决方案
-- [Module Federation 官方文档](https://webpack.js.org/concepts/module-federation/)
-
-<hr />
-
-## :mortar_board: 调试与开发工具
-
-### :closed_book: Source Map 配置
-
-- [Webpack Devtool 配置详解](https://webpack.docschina.org/configuration/devtool)
-- [Source Maps 最佳实践](https://www.webpackjs.com/guides/development/)
-- [调试 Webpack](https://webpack.docschina.org/contribute/debugging/)
-
-### :closed_book: 开发服务器配置
-
-- [webpack-dev-server 配置详解](https://webpack.docschina.org/configuration/dev-server/)
-- [Webpack HMR 热更新原理与实践](https://segmentfault.com/a/1190000020310371)
-- [webpack-dev-middleware 使用指南](https://github.com/webpack/webpack-dev-middleware)
-
-### :closed_book: 调试技巧
-
-- [Webpack 调试技巧大全](https://webpack.docschina.org/api/cli/#debug-options)
-- [使用 --display-error-details 查看详细错误](https://webpack.js.org/api/cli/#root)
-- [Webpack 构建分析工具](https://webpack.docschina.org/guides/code-splitting/#bundle-analysis)
-
-<hr />
-
-## :mortar_board: 性能优化
-
-- [Web Performance Optimization with Webpack](https://developers.google.com/web/fundamentals/performance/webpack/)
-- [Webpack 4: mode and optimization](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a)
-- [The 100\% correct way to split your chunks with Webpack](https://medium.com/hackernoon/the-100-correct-way-to-split-your-chunks-with-webpack-f8a9df5b7758)
-- [iamakulov/awesome-webpack-perf](https://github.com/iamakulov/awesome-webpack-perf)
-- [Webpack 构建性能优化探索](https://github.com/pigcan/blog/issues/1)
-- [开发工具心得：如何 10 倍提高你的 Webpack 构建效率](https://segmentfault.com/a/1190000005770042)
-- [webpack Performance: The Comprehensive Guide](https://github.com/lcxfs1991/blog/issues/15)
-- [彻底解决Webpack打包慢的问题](https://segmentfault.com/a/1190000006087638)
-- [webpack 构建性能优化策略小结](https://segmentfault.com/a/1190000007891318)
-- [彻底解决 webpack 打包文件体积过大](https://www.jianshu.com/p/a64735eb0e2b)
-- [玩转 webpack，使你的打包速度提升 90\%](https://juejin.cn/post/6844904071736852487)
-- [ESM vs Webpack 面向高性能构建的探索](https://juejin.cn/post/6947890290896142350)
-
-### :closed_book: 构建速度优化
-
-- [Webpack 构建速度优化指南](https://webpack.docschina.org/guides/build-performance/)
-- [thread-loader 多线程构建](https://github.com/webpack-contrib/thread-loader)
-- [cache-loader 缓存优化](https://github.com/webpack-contrib/cache-loader)
-- [DllPlugin 预编译资源](https://webpack.docschina.org/plugins/dll-plugin/)
-
-### :closed_book: 包体积优化
-
-- [webpack-bundle-analyzer 分析工具](https://github.com/webpack-contrib/webpack-bundle-analyzer)
-- [Webpack 包体积优化](https://webpack.docschina.org/guides/tree-shaking/)
-- [splitChunks 代码分割优化](https://webpack.docschina.org/plugins/split-chunks-plugin/)
-
-<hr />
-
-## :mortar_board: 实战项目
-
-### :closed_book: React 项目配置
-
-- [从零搭建 React + TypeScript + Webpack 开发环境](https://github.com/guojiongwei/webpack5-react-ts)
-- [React 项目完整 Webpack 配置](https://github.com/facebook/create-react-app)
-
-### :closed_book: Vue 项目配置
-
-- [Vue CLI Webpack 配置解析](https://cli.vuejs.org/zh/guide/webpack.html)
-- [Vue 项目 Webpack 配置优化](https://github.com/vuejs/vue-cli)
-
-### :closed_book: TypeScript 集成
-
-- [Webpack + TypeScript 配置指南](https://webpack.docschina.org/guides/typescript/)
-- [ts-loader vs babel-loader 性能对比](https://github.com/TypeStrong/ts-loader)
-
-<hr />
-
-## :mortar_board: 视频教程
-
-### :closed_book: 中文视频教程
-
-- [尚硅谷 Webpack5 教程](https://www.bilibili.com/video/BV1e7411j7T5)
-- [黑马程序员 Webpack 教程](https://www.bilibili.com/video/BV1YU4y1g745)
-- [千锋大前端 Webpack5 学习指南](https://github.com/lurongtao/webpack5-)
-
-### :closed_book: 英文视频教程
-
-- [Webpack Crash Course](https://www.youtube.com/watch?v=lziuNMk_8eQ)
-- [Webpack 5 Tutorial](https://www.youtube.com/watch?v=X1nxTjVDYdQ)
-- [Learn Webpack in 15 Minutes](https://www.youtube.com/watch?v=TzdEpgONurw)
-
-<hr />
-
-## :mortar_board: 工具和插件
-
-### :closed_book: 常用插件
-
-- [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) - HTML 文件生成
-- [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) - CSS 提取
-- [clean-webpack-plugin](https://github.com/johnagan/clean-webpack-plugin) - 清理构建目录
-- [copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin) - 文件复制
-- [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) - 包分析
-
-### :closed_book: 常用 Loader
-
-- [babel-loader](https://github.com/babel/babel-loader) - ES6+ 转译
-- [css-loader](https://github.com/webpack-contrib/css-loader) - CSS 处理
-- [style-loader](https://github.com/webpack-contrib/style-loader) - CSS 注入
-- [file-loader](https://github.com/webpack-contrib/file-loader) - 文件处理
-- [url-loader](https://github.com/webpack-contrib/url-loader) - URL 处理
-
-<hr />
-
-## :mortar_board: 社区资源
-
-### :closed_book: 官方资源
-
-- [Webpack 官方网站](https://webpack.js.org/)
-- [Webpack 中文文档](https://webpack.docschina.org/)
-- [Webpack GitHub](https://github.com/webpack/webpack)
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Vue CLI](https://github.com/vuejs/vue-cli)
+- [Angular CLI](https://github.com/angular/angular-cli)
+- [Next.js](https://nextjs.org/docs/api-reference/next.config.js/custom-webpack-config)
 - [Webpack CLI](https://github.com/webpack/webpack-cli)
 
-### :closed_book: 社区讨论
+---
 
-- [Webpack 官方 Gitter](https://gitter.im/webpack/webpack)
-- [Stack Overflow Webpack 标签](https://stackoverflow.com/questions/tagged/webpack)
-- [Reddit Webpack 社区](https://www.reddit.com/r/webpack/)
+## Advanced Topics
 
-### :closed_book: 博客和文章
+### Core Concepts Deep Dive
 
-- [Webpack 官方博客](https://medium.com/webpack)
-- [Webpack 相关文章合集](https://github.com/webpack-contrib/awesome-webpack)
-- [前端工程化与 Webpack](https://github.com/ruanyf/jstraining)
+#### Tree Shaking
+- [Tree Shaking Guide](https://webpack.js.org/guides/tree-shaking/)
+- [Tree Shaking: A Reference Guide](https://auth0.com/blog/tree-shaking/)
+- [Effective Tree Shaking](https://medium.com/@netxm/what-is-tree-shaking-de7c6be5cadd)
+- [Understanding Tree Shaking in Webpack](https://blog.bitsrc.io/understanding-tree-shaking-in-webpack-4e2b07b44dd0)
+
+#### Code Splitting & Lazy Loading
+- [Code Splitting Guide](https://webpack.js.org/guides/code-splitting/)
+- [Dynamic Imports in Webpack](https://webpack.js.org/guides/code-splitting/#dynamic-imports)
+- [Lazy Loading Components](https://webpack.js.org/guides/lazy-loading/)
+- [Advanced Code Splitting Patterns](https://hackernoon.com/the-100-correct-way-to-split-your-chunks-with-webpack-f8a9df5b7758)
+
+#### Caching Strategies
+- [Caching Guide](https://webpack.js.org/guides/caching/)
+- [Webpack 5 Built-in Caching](https://webpack.js.org/configuration/cache/)
+- [Long-term Caching](https://developers.google.com/web/fundamentals/performance/webpack/use-long-term-caching)
+- [Cache Optimization Strategies](https://medium.com/webpack/webpack-5-cache-guide-9b4a60e4a7a2)
+
+#### Module Federation
+- [Module Federation Concepts](https://webpack.js.org/concepts/module-federation/)
+- [Module Federation Examples](https://github.com/module-federation/module-federation-examples)
+- [Practical Module Federation](https://github.com/webpack/webpack/tree/master/examples/module-federation)
+- [Building Micro-frontends with Module Federation](https://blog.bitsrc.io/building-microfrontends-with-webpack-5-module-federation-3b97ffb22a0d)
+
+### Custom Loaders
+
+- [Writing a Loader](https://webpack.js.org/contribute/writing-a-loader/)
+- [Loader API Documentation](https://webpack.js.org/api/loaders/)
+- [Creating Custom Webpack Loaders](https://blog.bitsrc.io/creating-custom-webpack-loaders-3c0be1b0a4c2)
+- [How to Write a Webpack Loader](https://www.robinwieruch.de/webpack-loader/)
+- [Webpack Loader Examples](https://github.com/webpack-contrib/awesome-webpack#loaders)
+
+### Custom Plugins
+
+- [Writing a Plugin](https://webpack.js.org/contribute/writing-a-plugin/)
+- [Plugin API Documentation](https://webpack.js.org/api/plugins/)
+- [Creating Webpack Plugins](https://medium.com/js-imaginea/creating-webpack-plugins-84c21ab1dc7a)
+- [Plugin Development Guide](https://survivejs.com/webpack/extending/plugins/)
+- [Webpack Plugin Examples](https://github.com/webpack-contrib/awesome-webpack#webpack-plugins)
+
+### Webpack Internals
+
+- [Webpack's Dependency Graph](https://webpack.js.org/concepts/dependency-graph/)
+- [Understanding Webpack's Runtime](https://blog.bitsrc.io/understanding-webpacks-runtime-7aa7b4e67f71)
+- [How Webpack Works Under the Hood](https://www.freecodecamp.org/news/a-complete-introduction-to-webpack-development-environment/)
+- [Webpack Compilation Process](https://medium.com/webpack/the-contributors-guide-to-webpack-part-1-a0410cc82ca4)
+- [AST and Webpack](https://blog.bitsrc.io/understanding-ast-in-javascript-and-how-webpack-uses-it-f3d8e93b6b1c)
+
+### Interview Questions
+
+- [Webpack Interview Questions](https://github.com/styopdev/webpack-interview-questions)
+- [Common Webpack Questions](https://blog.bitsrc.io/webpack-interview-questions-42fbc4d3b2b8)
+- [Frontend Build Tools Interview Guide](https://www.frontendinterviewhandbook.com/build-tools)
+
+---
+
+## Performance Optimization
+
+### Build Performance
+
+- [Build Performance Guide](https://webpack.js.org/guides/build-performance/)
+- [Speeding Up Webpack Builds](https://blog.logrocket.com/guide-performance-optimization-webpack/)
+- [Webpack Performance Optimization](https://developers.google.com/web/fundamentals/performance/webpack/)
+- [10x Faster Webpack Builds](https://blog.bitsrc.io/10-ways-to-speed-up-your-webpack-build-4c9c5e15b6d)
+
+### Bundle Size Optimization
+
+- [Bundle Analysis](https://webpack.js.org/guides/code-splitting/#bundle-analysis)
+- [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+- [Reducing Bundle Size](https://webpack.js.org/guides/tree-shaking/)
+- [Bundle Size Optimization Techniques](https://web.dev/reduce-javascript-payloads-with-code-splitting/)
+
+### Production Optimizations
+
+- [Production Mode](https://webpack.js.org/configuration/mode/#mode-production)
+- [Production Build Optimization](https://webpack.js.org/guides/production/)
+- [Minimizing Bundle Size](https://webpack.js.org/plugins/terser-webpack-plugin/)
+- [Asset Optimization](https://webpack.js.org/loaders/image-webpack-loader/)
+
+### Performance Analysis Tools
+
+- [webpack-monitor](https://github.com/webpackmonitor/webpackmonitor)
+- [speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
+- [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard)
+- [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+
+---
+
+## Micro-frontends & Module Federation
+
+### Module Federation Implementation
+
+- [Module Federation Examples](https://github.com/module-federation/module-federation-examples)
+- [Practical Module Federation](https://github.com/webpack/webpack/tree/master/examples/module-federation)
+- [Module Federation with React](https://github.com/jackzhujie/module-federation-demo)
+- [Vue.js Module Federation](https://github.com/module-federation/module-federation-examples/tree/master/vue-cli)
+- [Angular Module Federation](https://github.com/module-federation/module-federation-examples/tree/master/angular)
+
+### Micro-frontend Architecture
+
+- [Single-SPA Framework](https://single-spa.js.org/)
+- [Qiankun Micro-frontend Solution](https://qiankun.umijs.org/)
+- [Micro-frontend Architecture Guide](https://micro-frontends.org/)
+- [Building Micro Frontends](https://www.oreilly.com/library/view/building-micro-frontends/9781492082989/)
+
+### Best Practices
+
+- [Module Federation Best Practices](https://module-federation.github.io/guide/basic/host.html)
+- [Micro-frontend Communication Patterns](https://martinfowler.com/articles/micro-frontends.html)
+- [State Management in Micro-frontends](https://blog.bitsrc.io/state-management-in-micro-frontends-8c99d5dfe71c)
+
+---
+
+## Development Tools & Debugging
+
+### Source Maps
+
+- [Source Maps Configuration](https://webpack.js.org/configuration/devtool/)
+- [Source Maps Guide](https://webpack.js.org/guides/development/#using-source-maps)
+- [Debugging with Source Maps](https://blog.teamtreehouse.com/introduction-source-maps)
+- [Source Map Best Practices](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)
+
+### Development Server
+
+- [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
+- [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/)
+- [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware)
+- [Development Environment Setup](https://webpack.js.org/guides/development/)
+
+### Debugging Techniques
+
+- [Debugging Webpack](https://webpack.js.org/contribute/debugging/)
+- [Chrome DevTools for Webpack](https://developers.google.com/web/tools/chrome-devtools/webpack)
+- [Webpack CLI Debug Options](https://webpack.js.org/api/cli/#debugging-options)
+- [VS Code Webpack Debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+
+### Development Workflow
+
+- [Webpack Watch Mode](https://webpack.js.org/configuration/watch/)
+- [Live Reloading](https://webpack.js.org/guides/development/#using-webpack-dev-server)
+- [Error Handling](https://webpack.js.org/configuration/optimization/#optimizationemitonerrorswhilecompilation)
+- [Progress Reporting](https://webpack.js.org/plugins/progress-plugin/)
+
+---
+
+## Real-world Projects
+
+### React Projects
+
+- [React + Webpack 5 Boilerplate](https://github.com/taniarascia/webpack-boilerplate)
+- [React TypeScript Webpack Template](https://github.com/Microsoft/TypeScript-React-Starter)
+- [Advanced React Webpack Configuration](https://github.com/facebook/create-react-app/tree/master/packages/react-scripts)
+- [React SSR with Webpack](https://github.com/webpack/webpack/tree/master/examples/side-effects)
+
+### Vue.js Projects
+
+- [Vue CLI Webpack Config](https://cli.vuejs.org/guide/webpack.html)
+- [Vue.js Webpack Template](https://github.com/vuejs-templates/webpack)
+- [Vue 3 + Webpack 5 Setup](https://github.com/webpack/webpack/tree/master/examples/harmony)
+
+### Angular Projects
+
+- [Angular CLI Webpack](https://angular.io/guide/webpack)
+- [Custom Webpack Config for Angular](https://github.com/just-jeb/angular-builders)
+- [Angular Elements with Webpack](https://angular.io/guide/elements)
+
+### Full-Stack Applications
+
+- [MERN Stack with Webpack](https://github.com/microsoft/TypeScript-Node-Starter)
+- [Express + Webpack SSR](https://github.com/webpack/webpack/tree/master/examples/server-side-rendering)
+- [Webpack + GraphQL](https://github.com/webpack/webpack/tree/master/examples/graphql)
+
+### Enterprise Examples
+
+- [Large Scale Webpack Configuration](https://github.com/webpack/webpack/tree/master/examples/common-chunk-and-vendor-chunk)
+- [Multi-Page Application](https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points)
+- [Webpack Federation in Production](https://github.com/module-federation/universe)
+
+---
+
+## Video Tutorials
+
+### Beginner Tutorials
+
+- [Webpack Crash Course](https://www.youtube.com/watch?v=lziuNMk_8eQ) - Traversy Media
+- [Webpack 5 Tutorial](https://www.youtube.com/watch?v=X1nxTjVDYdQ) - The Net Ninja
+- [Learn Webpack in 15 Minutes](https://www.youtube.com/watch?v=TzdEpgONurw) - Web Dev Simplified
+- [Webpack for Beginners](https://www.youtube.com/playlist?list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8) - Colt Steele
+
+### Advanced Tutorials
+
+- [Webpack 5 Advanced Features](https://www.youtube.com/watch?v=p-MhcctfWKw) - Academind
+- [Module Federation Deep Dive](https://www.youtube.com/watch?v=s_Fs4AXsTnA) - Jack Herrington
+- [Webpack Performance Optimization](https://www.youtube.com/watch?v=y_RFOaSDL8I) - Steve Kinney
+- [Custom Webpack Plugins](https://www.youtube.com/watch?v=tMC5XdJTGhQ) - Sean Larkin
+
+### Conference Talks
+
+- [Webpack 5: What's New](https://www.youtube.com/watch?v=3On5Z0gjf4U) - Tobias Koppers
+- [Module Federation](https://www.youtube.com/watch?v=D3XYAx30CNc) - Zack Jackson
+- [The Future of Bundlers](https://www.youtube.com/watch?v=_-7H5LqsEH4) - Evan You
+
+---
+
+## Tools & Plugins
+
+### Essential Plugins
+
+- [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) - Generate HTML files
+- [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) - Extract CSS
+- [clean-webpack-plugin](https://github.com/johnagan/clean-webpack-plugin) - Clean output directory
+- [copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin) - Copy files
+- [terser-webpack-plugin](https://github.com/webpack-contrib/terser-webpack-plugin) - JavaScript minification
+- [optimize-css-assets-webpack-plugin](https://github.com/NMFR/optimize-css-assets-webpack-plugin) - CSS optimization
+- [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) - Bundle analysis
+
+### Essential Loaders
+
+- [babel-loader](https://github.com/babel/babel-loader) - Transpile ES6+
+- [css-loader](https://github.com/webpack-contrib/css-loader) - Load CSS
+- [style-loader](https://github.com/webpack-contrib/style-loader) - Inject CSS
+- [sass-loader](https://github.com/webpack-contrib/sass-loader) - Compile Sass
+- [postcss-loader](https://github.com/webpack-contrib/postcss-loader) - Process CSS with PostCSS
+- [file-loader](https://github.com/webpack-contrib/file-loader) - Load files
+- [url-loader](https://github.com/webpack-contrib/url-loader) - Load files as data URLs
+- [ts-loader](https://github.com/TypeStrong/ts-loader) - TypeScript loader
+
+### Development Tools
+
+- [webpack-dev-server](https://github.com/webpack/webpack-dev-server) - Development server
+- [webpack-hot-middleware](https://github.com/webpack-contrib/webpack-hot-middleware) - HMR middleware
+- [webpack-merge](https://github.com/survivejs/webpack-merge) - Merge configurations
+- [cross-env](https://github.com/kentcdodds/cross-env) - Cross-platform environment variables
+- [dotenv-webpack](https://github.com/mrsteele/dotenv-webpack) - Environment variables from .env
+
+### Analysis & Optimization Tools
+
+- [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) - Interactive bundle analyzer
+- [speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin) - Measure build speed
+- [duplicate-package-checker-webpack-plugin](https://github.com/darrenscerri/duplicate-package-checker-webpack-plugin) - Check for duplicates
+- [circular-dependency-plugin](https://github.com/aackerman/circular-dependency-plugin) - Detect circular dependencies
+
+---
+
+## Community Resources
+
+### Official Resources
+
+- [Webpack Official Website](https://webpack.js.org/)
+- [Webpack Documentation](https://webpack.js.org/concepts/)
+- [Webpack GitHub Repository](https://github.com/webpack/webpack)
+- [Webpack CLI](https://github.com/webpack/webpack-cli)
+- [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
+
+### Community
+
+- [Webpack Twitter](https://twitter.com/webpack)
+- [Webpack Discord](https://discord.gg/webpack)
+- [Stack Overflow - Webpack](https://stackoverflow.com/questions/tagged/webpack)
+- [Reddit - r/webpack](https://www.reddit.com/r/webpack/)
+- [Webpack Discussions](https://github.com/webpack/webpack/discussions)
+
+### Blogs & Articles
+
+- [Webpack Medium Publication](https://medium.com/webpack)
+- [SurviveJS Webpack Book](https://survivejs.com/webpack/)
+- [Webpack Contributors Blog](https://webpack.js.org/contribute/)
+- [awesome-webpack](https://github.com/webpack-contrib/awesome-webpack) - Community collection
+
+### Newsletters & Updates
+
+- [Webpack Newsletter](https://webpack.js.org/newsletter/)
+- [This Week in Webpack](https://medium.com/webpack)
+- [JavaScript Weekly](https://javascriptweekly.com/) - General JS news including Webpack
+
+---
+
+## Books & Courses
+
+### Books
+
+- [SurviveJS - Webpack](https://survivejs.com/webpack/) - Free online book
+- [Webpack: The Definitive Guide](https://www.oreilly.com/library/view/webpack-the-definitive/9781492051923/)
+- [Learning Webpack](https://www.packtpub.com/product/learning-webpack/9781786462329)
+- [Modern JavaScript Tools & Skills](https://wesbos.com/javascript) - Includes Webpack
+
+### Online Courses
+
+- [Webpack Academy](https://webpack.academy/) - Official Webpack courses
+- [Webpack Course on Udemy](https://www.udemy.com/course/webpack-from-beginner-to-advanced/)
+- [Frontend Masters - Webpack Workshop](https://frontendmasters.com/workshops/webpack/)
+- [Pluralsight Webpack Course](https://www.pluralsight.com/courses/webpack-fundamentals)
+
+### Certification & Training
+
+- [Webpack Certification Program](https://webpack.academy/certification)
+- [Linux Foundation Training](https://training.linuxfoundation.org/training/introduction-to-open-source-development-git-and-linux/)
+
+---
+
+## Contributing
+
+Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
+
+## License
+
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, the contributors have waived all copyright and related or neighboring rights to this work.
